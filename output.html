@@ -1,0 +1,1300 @@
+<!-- javascript most important interview questions -->
+
+
+<!-- 1 -->
+
+<script>
+    // let a = [] #adfddf3(this is memory location)
+    // let b = [] #aldsfsf5(this is memory location)
+    // console.warn(a == b)  false
+    // console.warn(a === b) false
+</script>
+<!-- ans is varable a and variable b have different memory location -->
+
+<!-- 2 -->
+
+<script>
+//      let a = [] (#flffsf5 this is memory location)
+//     let b = a
+//     console.warn(a == b) true
+//     console.warn(a === b) true
+// </script>
+<!-- ans is variable a and variable b have same memory location -->
+
+<!-- 3 -->
+
+<script>
+    // let a = [20] type number
+    // let b = [20] type number
+    // console.warn(a[0] == b[0]) true
+    // console.warn(a[0] === b[0]) true
+</script>
+<!-- ans is ture true  variable a and variable b have same index value
+and type is number -->
+
+<!-- 4 -->
+
+<!-- <script>
+    let a = [20] type number
+    let b = ['20'] type string
+    console.warn(a[0] == b[0]) true 
+    console.warn(a[0] === b[0]) false
+
+</script> -->
+<!-- and is both have different type and same index value -->
+
+<!-- 5 -->
+
+<!-- <script>
+    (array destcturing)
+    let z = [1, 2, 3, 4, 5, 6]
+    let a = { name: 'gaurav' } object define
+    console.warn(...z) spread operator
+</script> -->
+
+<!-- ans is ...z=1,2,3,4,5 -->
+
+<!-- 6 -->
+
+<!-- <script>
+    console.log(typeof NaN)
+</script> -->
+<!-- ans is number and full form of nan is not a number -->
+<!-- NAN is a special type of number when we define like('gaurav'/2 or 'diary'/2 the out put is NaN) -->
+
+
+<!-- 7 -->
+
+<!-- <script>
+    let data = 10 - -10
+    console.log(data)
+</script> -->
+
+<!-- out put is 20 -->
+
+<!-- 8 -->
+
+<!-- <script>
+    const set = new Set([1, 1, 2, 3, 4]);
+    console.log(set);
+</script> -->
+<!-- set is a data type and it remove all the ducplicate value form the set. -->
+<!-- output is 1,2,3,4 -->
+
+
+<!-- 9 -->
+
+<!-- <script>
+
+    let data = { name: "gaurav" }
+    console.log(delete data.name);
+    the output is true
+    console.log(data);
+</script> -->
+
+<!-- 10 -->
+
+<!-- <script>
+    const data = { name: "gaurav" }
+    console.warn(delete data)
+    output is false because of the we cannot delete directely variable or data variable.
+</script> -->
+
+
+<!-- 11 -->
+<!-- <script>
+    const data = ['peter', 'anil', 'sam']
+    const [a] = data  for getting first value form the array
+    console.log(a);
+    output is peter
+</script> -->
+<!-- for getting first value from the array -->
+
+<!-- 12 -->
+
+
+<!-- <script>
+    const data = ['peter', 'anil', 'sam']
+    const [a, b, c] = data
+    console.log(a, b, c);
+</script> -->
+
+<!-- output is peter anil and sam -->
+
+<!-- for getting second value or multiple values -->
+
+
+<!-- 13 -->
+
+<!-- <script>
+    const data = ['peter', 'anil', 'sam']
+    const [, b] = data
+    console.log(b);
+</script> -->
+<!-- only second value want -->
+<!-- output is anil -->
+
+<!-- 14 -->
+
+<!-- <script>
+    const data = {
+        name: "gaurav",
+        age: 29,
+        skill: "js"
+    }
+    var { skill } = data;
+    console.warn(skill);
+</script> -->
+<!-- output is 29 -->
+
+<!-- in the above example there is on fatching age from the object. -->
+
+
+
+<!-- 14 -->
+
+<!-- <script>
+    let data = {
+        name: 'gaurav',
+        age: 29,
+        skill: 'js'
+    }
+    let info = {
+        city: "noida",
+        email: "gauravsinghbisht184@gmail.com"
+
+    }
+    data = { ...data, ...info }
+    console.warn(data)
+</script>
+
+merge two objects
+output is {'gaurav', age: 29, skill: 'js', city: 'noida', email: 'gauravsinghbisht184@gmail.com'} -->
+
+
+<!-- 15 -->
+
+<!-- <script>
+    let data = {
+        name: "anil",
+        age: 29,
+        skill: "js",
+    }
+    info = { city: "noida", mail: "gauravsinghbisht184@gmail.com" }
+    data = { data, ...info }
+    console.warn(data)
+</script> -->
+
+<!-- output is data=data inside data as well as info object -->
+
+
+<!-- 16 -->
+
+<!-- <script>
+    let data = {
+        name: "anil",
+        age: 29,
+        skill: "js"
+    }
+    let info = {
+        city: "noida",
+        skill: "python",
+
+    }
+    data = { ...data, ...info }
+    console.log(data)
+</script> -->
+
+<!-- output is name="anil", age="29", city="noida", skill="python" **skill is changed** -->
+
+<!-- 17 -->
+
+<!-- <script>
+    const name = "anil";
+    console.log(name());
+</script> -->
+
+<!-- output is name is not a function -->
+
+<!-- 18 -->
+
+<!-- <script>
+    it will take all positive value
+    const result = false || 20 || null;
+    if (20) {
+        console.warn("yes")
+    }
+    console.warn(result)
+</script> -->
+
+<!-- output is  20 -->
+<!-- object is also true {} -->
+<!-- it return positive value like 20 -->
+
+<!-- 19 -->
+
+<!-- 
+<script>
+    all values are negative
+    const result = "" || null || false
+    console.log(result);
+</script> -->
+<!-- output is false -->
+<!-- if all value are negative it will take last negative number -->
+
+<!-- 20 -->
+
+<!-- <script>
+    const result = [] || 0 || true;
+    console.log(result)
+</script> -->
+
+<!-- output is [] because of the [] is also positive  -->
+
+<!-- 21 -->
+
+<!-- <script>
+    console.warn(Promise.resolve(5))
+</script> -->
+
+
+<!-- 22 -->
+
+<!-- <script>
+    console.log('heart' === 'heart') 
+</script> -->
+<!-- output is true -->
+
+
+
+<!-- 21 -->
+
+<!-- <script>
+    JSON.parse();
+    what this method will do ?
+        parse json to a javascript value.
+</script> -->
+
+
+<!-- 22 -->
+
+
+
+<!-- <script>
+    let name = 'gaurav';
+    function getName() {
+        console.log(name)
+        let name = 'anil'
+    }
+    getName()
+</script> -->
+
+<!-- output is an error because of we cannot access variable before the name -->
+
+<!-- 23 -->
+
+<!-- <script>
+    let name = 'anil'
+    function getNAme() {
+
+        console.log(name)
+    }
+    getNAme();
+</script> -->
+
+<!-- output is anil -->
+
+<!-- 24 -->
+<!-- <script>
+    console.log((x => x)('I love'));
+    console.log(`${(x => x)('I love')} to program`);
+</script> -->
+
+<!-- output is I love and I love you -->
+
+
+<!-- 25 -->
+
+
+<!-- <script>
+
+    function sumValues(x, y, z) {
+        return x + y + z;
+    }
+
+    console.warn(sumValues(...[1, 2, 3]))
+
+</script> -->
+
+
+<!-- 26 -->
+
+<!-- <script>
+
+    const name = "code step by step";
+    console.log(!typeof name === "object")
+    console.log(!typeof name === "object")
+    console.log(!typeof name === false)
+
+</script> -->
+
+<!-- output is false, false, true -->
+<!-- because there are two operations are performed  (! % ===) the prieroty is left to right  -->
+
+<!-- 27 -->
+
+<!-- <script>
+
+    const name = "subscribe"
+    const age = 21
+    console.warn(isNaN(name))
+    console.warn(isNAN(age))
+
+</script> -->
+
+<!-- output is true and false -->
+
+
+<!-- 28 -->
+
+<!-- <script>
+    let person = { name: 'Anil' }
+    what can modify person object?
+    Object.seal(person);
+    person.name = "gaurav"
+    console.warn(person);
+</script> -->
+
+<!-- output is name: gaurav, because when we seal the person then we can modify only name -->
+
+<!-- 29 -->
+
+<!-- <script>
+    let data = [2, 9, 0, 10];
+    remove first element
+    data.shift(); use this for remove first element
+    console.warn(data);
+
+</script> -->
+
+<!-- output is 9,0,10 -->
+
+
+<!-- 30 -->
+
+<!-- <script>
+    let data = [2, 9, 0, 10]
+    remove last element
+    data.pop() use this for remove last element
+    console.warn(data); 
+</script> -->
+
+<!-- output is 2,9,0 -->
+
+<!-- 31 -->
+
+<!-- check any value is odd and even -->
+
+<!-- <script>
+    let a = 30
+    console.warn(a % 2)
+check any value is odd or even
+</script> -->
+<!-- output is 0 -->
+
+
+
+
+<!-- 32 -->
+
+<!-- <script>
+    let data = {
+        name: "gaurav",
+    }
+    delete data.name
+    console.log(data)
+</script> -->
+
+<!-- output is {} -->
+
+
+
+<!-- 33 -->
+
+
+<!-- <script>
+    let data = "true";
+    convert data to boolean false value
+    console.log(typeof !data);
+    or
+    console.log(!data)
+</script> -->
+
+<!-- to convert we use not operator -->
+
+
+<!-- 34 -->
+
+<!-- <script>
+    let data = "true";
+    covert data to boolen true value
+    console.log(!!data);
+</script> -->
+
+<!-- to convert we use double not operator -->
+
+<!-- 35 -->
+
+<!-- different between map and for each function -->
+
+<!-- map function return any thing and for each does not return any thing. -->
+
+
+
+<!-- 36 -->
+<!-- 
+<script>
+    let data = ['anil', 'gaurav', 'mohit']
+    delete data[1]
+    console.warn(data)
+</script>
+
+output is anil, empty, mohit -->
+
+<!-- 37 -->
+<!-- <script>
+    let data = ['anil', 'gaurav', 'harry']
+    delete data[1]
+    console.log(data.length)
+</script> -->
+<!-- output is three -->
+
+
+
+<!-- 38 -->
+
+<!-- merge two arry -->
+<!-- <script>
+    let a = [1, 2, 3]
+    let b = [4, 5, 6]
+    let c = [...a, ...b]
+    console.warn(c)
+</script> -->
+
+<!-- output is 1,2,3,4,5,6 -->
+
+<!-- 39 -->
+<!-- <script>
+    let a = [1, 2, 3, 4, 5]
+    let b = [5, 6, 7, 8, 9]
+    let c = [...a, ...b]
+    console.warn(c)
+
+</script> -->
+
+<!-- output is 1, 2, 3, 4, 5, 5, 6, 7, 8, 9
+it repeat ducplicate values -->
+
+<!-- 38 -->
+
+<!-- <script>
+    let c = 3 ** 3
+    console.warn(c);
+</script> -->
+<!-- output is 27 -->
+
+<!-- 39 -->
+
+<!-- 
+<script>
+    let a = 2;
+    setTimeout(() => {
+        console.warn(a);
+
+    }, 0);
+    a = 100;
+</script> -->
+
+<!-- output is 100 -->
+<!-- first a=2 exectute
+second a=100;
+then settimeout function is execute -->
+
+
+
+<!-- 40 -->
+
+
+<!-- <script>
+    let a = 30
+    let A = 50
+    console.warn(A);
+</script> -->
+
+<!-- output is 50 -->
+
+
+<!-- 41 -->
+<!-- <script>
+    let A10 = "like"
+    let 10A = "okay",
+    console.log(A10)
+</script>
+output is "like" -->
+
+
+<!-- 42 -->
+
+
+<!-- <script>
+    let a = "like"
+    let b = `like`
+    console.warn(a === b)
+
+</script> -->
+
+<!-- output is true -->
+
+
+<!-- 44 -->
+
+<!-- <script>
+    let a = 1;
+    let b = 2
+    console.log(--b === a)
+</script>
+output is true -->
+
+
+
+
+<!-- 45 -->
+<!-- 
+<script>
+    let a = 1;
+    let b = 1;
+    let c = 2;
+    console.log(a == b == --c)
+</script> -->
+<!-- output is false because of the a==b is true and b(true)==--c(false) -->
+<!-- output sis false -->
+
+
+<!-- 46 -->
+
+
+<!-- <script>
+    console.log(3 * 3)
+    console.log(3 ** 3)
+    console.log(3 *** 3)
+</script> -->
+
+<!-- output is 9,27 and *** is does not exist -->
+
+
+<!-- 48 -->
+
+<!-- <script>
+    console.warn(a)
+    var a
+</script> -->
+
+<!-- output is undefine  because of a have not value. -->
+
+<!-- 49 -->
+
+<!-- <script>
+
+    console.warn(b)
+</script> -->
+
+<!-- output is not define -->
+
+
+<!-- 50 -->
+
+<!-- <script>
+
+    console.warn([[[[]]]])
+</script> -->
+
+<!-- output is nested array -->
+
+
+
+<!-- 51 -->
+
+<!-- <script>
+    how to find os name
+</script> -->
+<!-- output is use console navigator.platform -->
+
+<!-- 52 -->
+
+
+<!-- <script>
+    let for= 100
+</script> -->
+
+<!-- because of for is a reserve keyword -->
+
+<!-- 53 -->
+
+
+<!-- <script>
+    function fruit() {
+        console.log(price)
+        console.log(name)
+        var name = "apple"
+        let price = 20
+    }
+    fruit()
+</script> -->
+
+<!-- hosting concept -->
+<!-- output is var (undefine) because of var first declare after then you will use -->
+<!-- let is cannot access  before initialization -->
+
+<!-- 54 -->
+
+<!-- **settimeout function** -->
+
+<!-- <script>
+    for (var i = 0; i < 3; i++) {
+        setTimeout(() => console.log(i), 1);
+    }
+</script>
+var scope is global level
+output is three -->
+
+
+<!-- 55 -->
+<!-- 
+<script>
+    for (let i = 0; i < 3; i++) {
+        setTimeout(() => console.log(i), 1)
+    }
+</script> -->
+
+<!-- let is block scope -->
+<!-- output is 0,1,2 -->
+
+<!-- 56 -->
+
+<!-- <script>
+    console.warn(+true);
+    console.warn(typeof +true);
+</script> -->
+<!-- output is 1 and number because of when we put + any before string or bullion value it will convert into number -->
+
+<!-- 57 -->
+
+<!-- <script>
+
+    console.log(!"gaurav")
+    console.log(typeof ("gaurav"))
+
+</script> -->
+
+<!-- output is false and typeof string -->
+
+<!-- 58 -->
+
+<!-- <script>
+    let data = "size"
+    const bird = {
+        size: "small",
+    }
+    console.warn(bird[data]);
+    console.warn(bird["size"]);
+    console.warn(bird.size);
+    console.warn(bird.data);
+
+
+</script> -->
+
+<!-- output is small small small undefine -->
+
+
+<!-- 59 -->
+
+
+<!-- <script>
+    let c = {
+        name: "gaurav"
+    }
+    let d;
+    d = c;
+    c.name = "bisht";
+    console.log(d.name)
+</script> -->
+
+<!-- output is bisht because of d and c have same memory location -->
+
+<!-- 60 -->
+
+<!-- <script>
+    var x (define value)
+    var x = 10 (declare value)
+    console.log(x);
+</script> -->
+
+
+<!-- output is 10 because we can define value multiple times -->
+
+
+<!-- 61 -->
+
+<!-- <script>
+    var x;
+    let x = 10;
+    console.log(x)
+</script> -->
+
+<!--  output is x has already been declared  -->
+
+
+<!-- 62 -->
+
+<!-- <script>
+    let a = 3;
+    let b = new Number(3);
+    console.log(a == b)
+    console.log(a === b)
+</script> -->
+<!-- type of b is object -->
+<!-- output is true and false -->
+
+
+<!-- 63 -->
+
+<!-- <script>
+    let name;
+    nmae = {}
+    console.log(name)
+</script> -->
+<!-- console.log output is updefine and console.log nmae output is {} -->
+
+
+<!-- 64 -->
+
+
+<!-- <script>
+
+    function fruit() {
+
+        console.log("woof!");
+    }
+    fruit.name = "apple";
+    fruit();
+</script> -->
+
+<!-- name propertie does not effect -->
+<!-- output is woof -->
+
+
+<!-- 65 -->
+
+<!-- <script>
+    function sum(a, b) {
+        return a + b;
+    }
+    console.log(sum(1 + "2"))
+</script> -->
+
+<!-- output is 12(string concatination) -->
+
+
+
+<!-- 66 -->
+
+<!-- <script>
+    let number = 0;
+    console.log(number++)  output is 0 and return (0+1=1)
+    console.log(++number)  output  is 2 and 
+    console.log(number) output is 2
+</script> -->
+
+<!-- output is 0, 2,2 -->
+
+
+<!-- 67 -->
+
+<!-- <script>
+    function getAge(...age) {
+        console.log(typeof age)
+    }
+    getAge(21);
+
+</script> -->
+
+<!-- type of spread operator is object -->
+
+
+<!-- 67 -->
+
+<!-- <script>
+    function getAge() {
+        'use strict'
+        age = 21
+        console.log(21)
+    }
+    getAge();
+</script> -->
+
+<!-- when we not asign any variable the default data type is var -->
+<!-- here use strict is protocol(rule) of assigning variable -->
+
+
+<!-- 68 -->
+<!-- <script>
+
+    const sum = eval('10*10+5')
+    console.log(sum)
+</script> -->
+
+<!-- output is 105 and here eval function is performing operations inside the eval function. -->
+
+
+<!-- 69 -->
+
+<!-- how long session store items? -->
+
+<!-- whenever the  tab or browser is not closed -->
+
+<!-- 70 -->
+
+<!-- <script>
+    const obj = {
+
+        1: "a",
+        2: "b",
+        3: "c",
+
+    }
+    console.log(obj.hasOwnProperty("1"))
+    console.log(obj.hasOwnProperty(1))
+</script> -->
+<!-- output is true -->
+
+
+<!-- 71 -->
+
+<!-- <script>
+    const obj = {
+        a: "one",
+        b: "two",
+        a: "repeat"
+    }
+    console.log(obj)
+</script> -->
+
+
+<!-- a has position first and value take last -->
+<!-- and the output is a:repeat, b:two -->
+
+<!-- 72 -->
+
+<!-- <script>
+
+    for (let i = 1; i < 5; i++) {
+        if (i == 3) continue;
+        console.log(i)
+    }
+</script> -->
+<!-- here, continue is except 3 vlaue. -->
+<!-- output is 1,2,4 -->
+
+
+
+<!-- 74 -->
+
+
+<!-- <script>
+    const foo = () => console.log('first')
+    const bar = () => setTimeout(() => console.log('second'));
+    const baz = () => console.log('third')
+    bar();
+    foo();
+    baz();
+</script> -->
+
+<!-- output is first third and second -->
+<!-- note here due to settimeout function the function is excute at last -->
+
+
+
+<!-- 75 -->
+
+
+<!-- <div>
+    <div onclick="console.log('first div')">
+        <div onclick="console.log('second div')">
+            <div onclick="console.log('third div')">
+                <button onclick="console.log('button')">
+                    Click!
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div> -->
+
+<!-- 
+<div onclick="alert(1)">
+    <div onclick="alert(2)">
+        <div onclick="alert(3)">
+            <button onclick="alert('click on ok')">
+                Click!
+            </button>
+        </div>
+    </div>
+</div>
+</div> -->
+
+<!-- output is first exectute button and 3,2,1 -->
+
+
+<!-- 76 -->
+
+
+<!-- <script>
+    const person = {
+        name: "gaurav",
+
+    }
+
+    function sayHi(age) {
+        return `${this.name} is ${age}`;
+    }
+    console.log(sayHi.call(person, 21));
+    console.log(sayHi.bind(person, 21));
+</script> -->
+
+
+<!-- output is gaurav is 21 -->
+
+
+<!-- use two function call and bind -->
+<!-- bind is use to add propertie. -->
+
+
+
+<!-- 78 -->
+
+<!-- 
+<script>
+    function sayHi() {
+        return (() => 0)(); here () function call it self
+    }
+
+    console.log(typeof sayHi())
+</script> -->
+<!-- output is number  -->
+
+<!-- 79 -->
+<!-- <script>
+    function sayHi() {
+        return () => 0;
+
+    }
+    console.log(typeof sayHi());
+
+</script> -->
+
+<!-- output is function -->
+
+
+<!-- 80 -->
+
+<!-- <script>
+    console.log(typeof typeof 1)
+</script> -->
+
+
+<!-- output is string typeof is string value -->
+
+<!-- 81 -->
+<!-- <script>
+
+    const number = [1, 2, 3];
+    number[6] = 11
+    
+    console.log(number);
+</script> -->
+
+<!-- output is [1, 2, 3, empty × 3, 11] -->
+
+<!-- 82 -->
+
+<!-- <script>
+    const number = [1, 2, 3]
+    number[9] = number;
+    console.log(number)
+
+</script> -->
+
+<!-- output is infinite at 9 index -->
+
+<!-- 83 -->
+
+<!-- Everything in javascript is either a... ?
+ans:primitive or object -->
+
+
+<!-- 84 -->
+
+<!-- 
+<script>
+    console.log(!!null);
+    console.log(!!"")
+    console.log(!!1)
+</script> -->
+
+<!-- output is false false true. -->
+
+
+<!-- 85 -->
+<!-- 
+<script>
+    console.log(setInterval(() => console.log('hi'), 1000))
+    console.log(setInterval(() => console.log('hi'), 1000))
+    console.log(setInterval(() => console.log('hi'), 1000))
+
+</script> -->
+
+<!-- setInterval is generte unique id -->
+<!-- output is multiple time generte hi -->
+
+
+<!-- 86 -->
+
+<!-- <script>
+
+    console.log([..."gaurav"])
+</script> -->
+
+<!-- output is string convert in to ['g', 'a', 'u', 'r', 'a', 'v'] array -->
+
+<!-- 87 -->
+
+
+<!-- **Promise** -->
+<!-- <script>
+    const firstPromise = new Promise((res, rej) => {
+
+        setTimeout(res, 500, "one");
+    });
+    const secondPromise = new Promise((res, rej) => {
+
+        setTimeout(res, 100, "two");
+    });
+    Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
+
+</script> -->
+<!-- race function is used to race between firstPromise and secondPromise  -->
+<!-- output is two because of settimeout function in min for secondPromise(100) -->
+
+<!-- 88 -->
+
+<!-- <script>
+    let person = {
+        name: "peter"
+    }
+    const members = [person];
+    person = null;
+    console.log(members);
+</script> -->
+
+<!-- output is null array -->
+
+<!-- 89 -->
+
+<!-- <script>
+    const person = {
+        name: "gaurav",
+        age: 21
+    }
+
+    for (const item in person) {
+        console.log(item)
+    }
+</script> -->
+
+<!-- output is name and age -->
+
+<!-- 90 -->
+
+
+<!-- <script>
+    let data = 3 + 4 + '5'
+    console.log(typeof data)
+
+</script> -->
+
+<!-- output is stirng -->
+
+<!-- 91 -->
+
+
+<!-- <script>
+    console.log(typeof 3 + 4 + '5')
+</script> -->
+
+<!-- output is number45 because typeof 3 is number and 4 +'5' is string concatination so the output is 45 -->
+
+<!-- 92 -->
+
+<!-- <script>
+    console.log(typeof (3 + 4 + +'5'))
+</script> -->
+
+<!-- output is number -->
+
+<!-- when we add two number (3+4=7) and 7+(+'5') the output is 12 because of before string + is add the string -->
+
+
+<!-- 93 -->
+
+<!-- <script>
+    console.log([] == [])
+</script> -->
+
+<!-- output is false because of when we compare array the memory location is different -->
+
+<!-- 94 -->
+<script>
+    // let data = [1, 2, 3].map(num => {
+    //     if (typeof num == 'number') return;
+    //     return num * 2;
+
+    // })
+    // console.log(data);
+</script>
+<!-- output is [undefined, undefined, undefined]  because of return value -->
+
+
+<!-- 95 -->
+
+
+<!-- 
+<script>
+
+    function getInfo(member) {
+        member.name = "anil";
+    }
+
+    const person = {
+        name: "gaurav"
+    }
+    getInfo(person)
+
+    console.log(person);
+
+
+</script> -->
+
+<!-- output is name: anil -->
+
+<!-- 96 -->
+
+
+<!-- <script>
+    function car() {
+        this.make = 'tata'
+        return { make: 'kia' }
+    }
+    const mycar = new car()
+    console.log(mycar.make)
+
+</script> -->
+<!-- output is kia -->
+
+<!-- 95 -->
+
+<!-- <script>
+    (() => {
+        let x = (y = 10);
+    })();
+    console.log(typeof x);
+</script> -->
+
+<!-- output is undefine -->
+<!-- because of let is block scope -->
+
+
+<!-- 96 -->
+
+<!-- <script>
+    (() => {
+        let x = y = 10;
+    })();
+    console.log(typeof y)
+</script> -->
+
+<!-- output is number because y is define as a number(10) -->
+
+
+<!-- 97 -->
+
+<!-- <script>
+    (() => {
+        let x = 10;
+    })();
+
+    (() => {
+        let x = 10;
+    })();
+
+    console.log(typeof x)
+</script> -->
+
+<!-- output is undefined  because of let x have different-block-->
+
+
+
+<!-- 98 -->
+<!-- <script>
+    (() => {
+        let x = y = 10;
+
+    })();
+    (() => {
+        let x = y = 20;
+    })()
+
+    console.log(y)
+</script> -->
+<!-- output is 20 -->
+
+
+<!-- 99 -->
+
+
+<!-- <script>
+    let x = 100;
+    (() => {
+        var x = 20;
+    })();
+    console.log(x)
+</script> -->
+
+<!-- output is 100 because of the global variable is x is acceable and block variable x is not acceable -->
+
+
+<!-- 100 -->
+
+<!-- <script>
+    console.log(!true - true);
+</script> -->
+
+<!-- output is -1 because true is 1 here (!true=0) the operation is (0-1=-1) -->
+
+<!-- 101 -->
+
+<!-- <script>
+
+    console.warn(true + +"10")
+</script> -->
+
+<!-- output is 11 -->
